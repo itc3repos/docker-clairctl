@@ -1,0 +1,6 @@
+clair:
+  port: 443
+  uri: https://clair.example.com
+  report:
+    path: ./reports
+    format: html
