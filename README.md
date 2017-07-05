@@ -14,7 +14,7 @@ docker build -t clairctl .
 ## To use the image
 
 ```
-docker run --rm -v config.yml:/root/config.yml -v $HOME/.docker:/root/.docker --config /root/config.yml analyze <image>
+docker run --rm -v $PWD/config.yml:/root/config.yml -v $HOME/.docker:/root/.docker clairctl --config /root/config.yml analyze <image>
 ```
 
 [Clairctl]: https://github.com/jgsqware/clairctl
